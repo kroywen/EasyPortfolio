@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thepegeekapps.easyportfolio"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+         <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:name=".screen.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".screen.MainScreen" android:label="@string/portfolios" android:windowSoftInputMode="stateAlwaysHidden|adjustPan" android:screenOrientation="portrait"/>
+        <activity android:name=".screen.GroupsScreen" android:label="@string/portfolios" android:screenOrientation="portrait"/>
+        <activity android:name=".screen.PortfoliosScreen" android:label="@string/portfolios" android:screenOrientation="portrait"/>
+        <activity android:name=".screen.AddRecordScreen" android:label="@string/add_record" android:screenOrientation="portrait"/>
+        <activity android:name=".screen.InfoScreen" android:label="@string/info" android:screenOrientation="portrait"/>
+        <activity android:name=".screen.VideosScreen" android:label="@string/videos" android:screenOrientation="portrait"/>
+        <activity android:name=".screen.ImagesScreen" android:label="@string/images" android:screenOrientation="portrait"/>
+        <activity android:name=".screen.PortfolioScreen" android:label="@string/portfolio" android:screenOrientation="portrait"/>
+        <activity android:name=".screen.NotesScreen" android:label="@string/notes" android:windowSoftInputMode="stateAlwaysHidden|adjustPan" android:theme="@android:style/Theme.Black.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".screen.ImageFullScreen" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity android:name=".screen.AudiosScreen" android:label="@string/audio_files" android:screenOrientation="portrait" />
+        <activity android:name=".screen.UrlsScreen" android:label="@string/urls" android:screenOrientation="portrait" />
+        <activity android:name=".screen.DocumentsScreen" android:label="@string/documents" android:screenOrientation="portrait" />
+        <activity android:name=".screen.DropboxScreen" android:label="@string/my_dropbox" android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard">
+	      	<intent-filter>
+		        <data android:scheme="db-aavyooi5y820cfa" />
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.BROWSABLE"/>
+		        <category android:name="android.intent.category.DEFAULT" />
+	      	</intent-filter>
+	    </activity>
+        
+    </application>
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+</manifest>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <include 
+        android:id="@+id/topbar" 
+        layout="@layout/topbar"
+        android:layout_alignParentTop="true" />"
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/topbar"
+        android:background="@drawable/background">
+    
+    <View style="@style/VerticalFiller" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            
+             <ImageView
+                 android:id="@+id/addVideoBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/add_btn_video" />
+             
+             <View style="@style/HorizontalFiller" />
+             
+             <ImageView
+                 android:id="@+id/addImageBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/add_btn_image" />
+             
+             <View style="@style/HorizontalFiller" />
+             
+             <ImageView
+                 android:id="@+id/addAudioBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/add_btn_audio" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp">
+            
+            <ImageView
+                 android:id="@+id/addNoteBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/add_btn_note" />
+            
+            <View style="@style/HorizontalFiller" />
+             
+             <ImageView
+                 android:id="@+id/addUrlBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/add_btn_url" />
+             
+             <View style="@style/HorizontalFiller" />
+             
+             <ImageView
+                 android:id="@+id/addDocBtn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/add_btn_doc" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <View style="@style/VerticalFiller" />
+    
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ribbon"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp" />
+
+</RelativeLayout>

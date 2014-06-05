@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/topbar" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/background">
+    
+    <ImageView 
+        android:id="@+id/mic" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/audio_mic" />
+    
+    <View style="@style/VerticalFiller" />"
+    
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:text="@string/no_recorded_audios" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:background="@drawable/select_action_bg">
+        
+        <ImageView
+            android:id="@+id/recordBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/record_btn_default" />
+        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#fff" />
+        
+        <ImageView
+            android:id="@+id/playBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_btn" />
+        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#fff" />
+        
+        <ImageView
+            android:id="@+id/stopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stop_btn" />
+        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#fff" />
+        
+        <ImageView
+            android:id="@+id/repeatBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reset_btn_default" />
+        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#fff" />
+        
+        <ImageView 
+            android:id="@+id/pencil" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/pencil" />
+        
+    </LinearLayout>
+    
+    </LinearLayout>
+
+</LinearLayout>

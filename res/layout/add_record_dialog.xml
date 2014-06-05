@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:gravity="center" 
+            android:text="@string/group" />
+        <com.thepegeekapps.easyportfolio.view.wheel.WheelView
+            android:id="@+id/selectGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="18sp" 
+            android:gravity="center"
+            android:text="@string/portfolio" />
+        <com.thepegeekapps.easyportfolio.view.wheel.WheelView
+            android:id="@+id/selectPortfolio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>  
+    
+    </LinearLayout>
+    
+    <CheckBox
+        android:id="@+id/noGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/none_group" />
+
+</LinearLayout>

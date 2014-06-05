@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <include layout="@layout/topbar" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+    
+    <View style="@style/VerticalFiller" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="13dp"
+        android:background="@drawable/seletc_img">
+    
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:gravity="center" />
+    
+    <View style="@style/VerticalFiller" />
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:background="@drawable/select_action_bg">
+        
+        <TextView 
+            android:id="@+id/selectAction" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/select_action" />
+        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#fff" />
+        
+        <ImageView 
+            android:id="@+id/pencil" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/pencil" />
+
+    </LinearLayout>
+    
+    </LinearLayout>
+
+</LinearLayout>

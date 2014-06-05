@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+    
+    <EditText    
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/portfolio_name"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="@string/group" />
+    
+    <com.thepegeekapps.easyportfolio.view.wheel.WheelView
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <CheckBox
+        android:id="@+id/noGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/none_group" />
+
+</LinearLayout>
